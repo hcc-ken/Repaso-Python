@@ -1,0 +1,18 @@
+from math import sqrt
+
+def distancia(x1, y1, x2, y2):
+    return sqrt((x2 - x1)**2 + (y2 - y1)**2)
+
+p1x = float(input("X del punto 1: "))
+p1y = float(input("Y del punto 1: "))
+p2x = float(input("X del punto 2: "))
+p2y = float(input("Y del punto 2: "))
+
+print("Distancia:", distancia(p1x, p1y, p2x, p2y))
+
+desde el archivo math, se importa específicamente la funcion sqrt
+creamos la funcion llamado distancia y se introduce los parámetros necesarios
+se devuelve el resultado de la operación especificada con la funcion que importamos anteriormente
+creamos la variable p1x float y pedimos al usuario que introduzca un numero
+las otras tres variables es lo mismo basicamente
+imprimimos el la palabra distancia y llamamos después a la funcion distancia

@@ -1,0 +1,59 @@
+1. Explícame este código.
+from math import sqrt
+
+def distancia(x1, y1, x2, y2):
+    return sqrt((x2 - x1)**2 + (y2 - y1)**2)
+
+p1x = float(input("X del punto 1: "))
+p1y = float(input("Y del punto 1: "))
+p2x = float(input("X del punto 2: "))
+p2y = float(input("Y del punto 2: "))
+
+print("Distancia:", distancia(p1x, p1y, p2x, p2y))
+
+
+
+2. Caja de texto avanzada
+Pide un texto al usuario y muéstralo dentro de una caja, pero ahora:
+
+La caja debe tener un borde doble.
+
+Debe permitir varias líneas.
+
+Debe centrar el texto dentro de la caja.
+
+Ej:
+====================
+||   Hola mundo   ||
+====================
+
+
+
+3. Suma con validación estricta
+Pide un número positivo n y calcula la suma de 1 a n, pero:
+
+Si el usuario mete letras → error.
+
+Si mete negativos → error.
+
+Si mete 0 → salir del programa.
+
+
+
+5. Contador de vocales
+Pide un texto y muestra cuántas veces aparece una vocal.
+
+
+
+6. Menú interactivo
+Crea un programa con un menú:
+
+Contar letras
+
+Contar palabras
+
+Invertir texto
+
+Salir
+
+El usuario elige una opción y el programa ejecuta la función correspondiente.

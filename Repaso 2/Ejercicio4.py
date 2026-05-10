@@ -1,5 +1,22 @@
-numero = -1
+def contador_letra():
+    letra = input("Introduzca una palabra.")
+    letras = len(letra)
+    print(f"Hay {letras} letras en {letra}")
 
+def contador_palabra():
+    palabra = input("Introduzca una frase.").split(" ")
+    palabras = len(palabra)
+    print(f"Hay {palabras} palabras en la frase {palabra}")
+
+def frase_invertida():
+    palabra = input("Introduzca una frase.")
+    invertida = ""
+
+    for i in palabra:
+        invertida = i + invertida
+    print(invertida)
+
+numero = -1
 try:
     while numero != 0:
         print("1. Contar letras")
@@ -10,20 +27,11 @@ try:
         numero = int(input("Introduzca número."))
 
         if numero == 1:
-            letra = input("Introduzca una palabra.")
-            letras = len(letra)
-            print(f"Hay {letras} letras en {letra}")
+            contador_letra()
         elif numero == 2:
-            palabra = input("Introduzca una frase.").split(" ")
-            palabras = len(palabra)
-            print(f"Hay {palabras} palabras en la frase {palabra}")
+            contador_palabra
         elif numero == 3:
-            palabra = input("Introduzca una frase.")
-            invertida = ""
-
-            for i in palabra:
-                invertida = i + invertida
-            print(invertida)
+            frase_invertida()
         elif numero == 4:
             break
 
